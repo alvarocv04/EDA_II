@@ -225,25 +225,45 @@ int similares(Arbol r1, Arbol r2)
   }
 }
 
-int equivalentes(Arbol r1,Arbol r2){
-	if(r1 == NULL && r2 == NULL)
-		return 1;
-	else if((NULL == r1 && NULL!=r2) || (NULL!=r1 && NULL==r2))
-		return 0;
-	else{ //if(NULL != r1 && NULL != r2)
-		if(r1->info == r2->info)
-			return equivalentes(r1->izq,r2->izq) * equivalentes(r1->der,r2->der);
-		else
-			return 0;
-	}
+int equivalentes(Arbol r1, Arbol r2)
+{
+  if (r1 == NULL && r2 == NULL)
+    return 1;
+  else if ((NULL == r1 && NULL != r2) || (NULL != r1 && NULL == r2))
+    return 0;
+  else
+  { // if(NULL != r1 && NULL != r2)
+    if (r1->info == r2->info)
+      return equivalentes(r1->izq, r2->izq) * equivalentes(r1->der, r2->der);
+    else
+      return 0;
+  }
 }
-Arbol especular(Arbol raiz){
-	if(NULL == raiz)
-		return NULL;
-	else{
-		Arbol a = creaNodo(raiz->info);
-		a->izq = especular(raiz->der);
-		a->der = especular(raiz->izq);
-		return a;
-	}
+Arbol especular(Arbol raiz)
+{
+  if (NULL == raiz)
+    return NULL;
+  else
+  {
+    Arbol a = creaNodo(raiz->info);
+    a->izq = especular(raiz->der);
+    a->der = especular(raiz->izq);
+    return a;
+  }
+}
+
+int nodosPorNivel(Arbol raiz, int nivel)
+{
+  int nivelActual = 0;
+  if (raiz == NULL)
+  {
+    return 0;
+  }
+  if (nivel == 0)
+  {
+    return 1;
+  }
+  int nodosDerecha = nodosPorNivel(raiz->der, nivel-1);
+  int nodosIzquierda = nodosPorNivel(raiz->izq, nivel-1);
+  return nodosDerecha + nodosIzquierda;
 }

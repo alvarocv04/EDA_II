@@ -3,6 +3,19 @@
 #include <string.h>
 #include "conjuntos.h"
 
+tipoCelda *creaNodo(tipoElemento x)
+{
+  tipoCelda *n;
+
+  if (NULL == (n = malloc(sizeof(tipoCelda))))
+    return NULL;
+
+  n->elemento = x;
+  n->sig = NULL;
+
+  return n;
+}
+
 /// Incluir aqui las funciones que implementan las tres operaciones básicas
 /// en la representación de CONJUNTOS DISJUNTOS mediante LISTAS
 /// ......................................................................
@@ -11,10 +24,8 @@ void crea(particion P)
 {
   for (int i = 0; i < MAXIMO; i++)
   {
-    P[i].primero = i;
-    P[i].ultimo = i;
-    P[i].primero->elemento = i;
-    P[i].primero->sig = NULL;
+    P[i].primero = creaNodo(i);
+    P[i].ultimo = creaNodo(i);
   }
 }
 
@@ -23,15 +34,37 @@ tipoConjunto buscar(tipoElemento x, particion P)
   tipoCelda y;
   for (int i = 0; i < MAXIMO; i++)
   {
-    if (P[i] != NULL)
+    if (P[i].primero != NULL)
     {
       y = *P[i].primero;
+      if (y.elemento == x)
+      {
+        return x;
+      }
       while (y.sig != NULL)
       {
-
+        y = *y.sig;
+        if (y.elemento == x)
+        {
+          return x;
+        }
       }
     }
   }
+  return 0;
+}
+int unir(tipoConjunto x, tipoConjunto y, particion P){
+  if(P[x].primero == NULL || P[y].primero==NULL){
+    return 0;
+  }
+  if(P[x].primero->elemento != x || P[y].primero->elemento != y){
+    return 0;
+  }
+  P[x].ultimo->sig = P[y].primero;
+  P[x].ultimo=P[y].ultimo;
+  P[y].primero=NULL;
+  P[y].ultimo=NULL;
+  return 1;
 }
 
 void verParticion(particion P)

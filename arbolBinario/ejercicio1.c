@@ -52,5 +52,8 @@ int main(void)
   fflush(stdout);
   printf("El valor minimo  de un nodo del arbol es: %d\r\n", buscarMin(varArbol)->info);
   fflush(stdout);
+  printf("En el nivel 0 hay %d nodos\r\n", nodosPorNivel(varArbol,0));
+  printf("En el nivel 1 hay %d nodos\r\n", nodosPorNivel(varArbol,1));
+  printf("En el nivel 2 hay %d nodos\r\n", nodosPorNivel(varArbol,2));
   return 1;
 }
