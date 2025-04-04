@@ -82,25 +82,13 @@ void crea(particion P)
     }
 }
 
-/*tipoConjunto buscar(tipoElemento x, particion P)
-{
-    if (P[x] < 0)
-    {
-        return x;
-    }
-    return buscar(P[x], P);
-}
-*/
-//BUSCAR CON COMPRENSION DE CAMINO
 tipoConjunto buscar(tipoElemento x, particion P)
 {
     if (P[x] < 0)
     {
         return x;
     }
-    tipoElemento padre = buscar(P[x], P);
-    P[x]=padre;
-    return padre;
+    return buscar(P[x], P);
 }
 
 int unir(tipoConjunto x, tipoConjunto y, particion P)
@@ -122,7 +110,20 @@ int unir(tipoConjunto x, tipoConjunto y, particion P)
         return 1;
     }
 }
-//
+
+//BUSCAR CON COMPRENSION DE CAMINO
+/*tipoConjunto buscar(tipoElemento x, particion P)
+{
+    if (P[x] < 0)
+    {
+        return x;
+    }
+    tipoElemento padre = buscar(P[x], P);
+    P[x]=padre;
+    return padre;
+}
+*/
+
 // Función auxiliar para ver contenido de Partición
 //
 void verParticion(particion P)
