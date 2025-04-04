@@ -56,20 +56,51 @@ int eliminarMinimo(Monticulo *m, tipoElemento *minimo)
     filtradoDescendente(m, 1);
     return 0;
 }
+
+void decrementarClave(int pos, tipoClave cantidad, Monticulo *m)
+{
+    if (pos <= 0 || pos > m->tamanno)
+        return;
+    tipoElemento aDecrementar = m->elemento[pos];
+    aDecrementar.clave -= cantidad;
+    filtradoAscendente(m, pos);
+}
+
+void incrementar(int pos, tipoClave cantidad, Monticulo *m)
+{
+    if (pos <= 0 || pos > m->tamanno)
+        return;
+    tipoElemento aIncrementar = m->elemento[pos];
+    aIncrementar.clave += cantidad;
+    filtradoDescendente(m, pos);
+}
+
+int esMonticulo(Monticulo m)
+{
+    for (int i = m.tamanno; i > 1; i--)
+    {
+        if (m.elemento[i].clave < m.elemento[i / 2].clave)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
 void filtradoAscendente(Monticulo *m, int i)
 {
-    tipoElemento hueco = m->elemento[i];
-    while (hueco.clave < m->elemento[i / 2].clave && i > 1)
+    tipoElemento aOrdenar = m->elemento[i];
+    while (aOrdenar.clave < m->elemento[i / 2].clave && i > 1)
     {
         m->elemento[i] = m->elemento[i / 2];
         i = i / 2;
     }
-    m->elemento[i] = hueco;
+    m->elemento[i] = aOrdenar;
 }
 
 void filtradoDescendente(Monticulo *m, int i)
 {
-    tipoElemento temp = m->elemento[i];
+    tipoElemento aOrdenar = m->elemento[i];
     int hijoMenor, finFiltrado = 0;
     while (2 * i <= m->tamanno && !finFiltrado)
     {
@@ -78,7 +109,7 @@ void filtradoDescendente(Monticulo *m, int i)
         {
             hijoMenor = hijoMenor + 1;
         }
-        if (m->elemento[hijoMenor].clave < temp.clave)
+        if (m->elemento[hijoMenor].clave < aOrdenar.clave)
         {
             m->elemento[i] = m->elemento[hijoMenor];
             i = hijoMenor;
@@ -88,5 +119,5 @@ void filtradoDescendente(Monticulo *m, int i)
             finFiltrado = 1;
         }
     }
-    m->elemento[i]=temp;
+    m->elemento[i] = aOrdenar;
 }
