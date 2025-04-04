@@ -66,7 +66,7 @@ void decrementarClave(int pos, tipoClave cantidad, Monticulo *m)
     filtradoAscendente(m, pos);
 }
 
-void incrementar(int pos, tipoClave cantidad, Monticulo *m)
+void incrementarClave(int pos, tipoClave cantidad, Monticulo *m)
 {
     if (pos <= 0 || pos > m->tamanno)
         return;
