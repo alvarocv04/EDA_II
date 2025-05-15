@@ -1,0 +1,4 @@
+	 101116 Estructura de Datos y Algoritmos II  2 4.5 1.5 B S 2 / 6
+CUBO 6 CUBODESBORDE -1 posicion 1 
+	 101116 Estructura de Datos y Algoritmos II  2 4.5 1.5 B S 2 / 6
+CUBO 6 CUBODESBORDE -1 posicion 1 

@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "conjuntos.h": "c"
+        "conjuntos.h": "c",
+        "stdlib.h": "c"
     }
 }
