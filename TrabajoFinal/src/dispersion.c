@@ -203,3 +203,88 @@ int creaHash(char *fichEntrada, char *fichHash, regConfig *regC)
    fclose(fSalida);
    return 0;
 }
+
+int busquedaHash(FILE *fHash, tipoReg *reg, tPosicion *posicion)
+{
+   if (!fHash)
+      return -2;
+
+   tipoCubo cubo;
+   int i, posHash;
+
+   posHash = funcionHash(reg, posicion->cubo);
+   posicion->cubo = posHash;
+   posicion->cuboDes = -1;
+   posicion->posReg = -1;
+
+   fseek(fHash, sizeof(regConfig) + posHash * sizeof(tipoCubo), SEEK_SET);
+   fread(&cubo, sizeof(tipoCubo), 1, fHash);
+
+   for (i = 0; i < cubo.numRegAsignados; i++)
+   {
+      if (cmpClave(&cubo.reg[i], reg) == 0)
+      {
+         *reg = cubo.reg[i];
+         posicion->posReg = i;
+         return 0;
+      }
+   }
+
+   if (cubo.desbordado)
+   {
+      int posDesb = posicion->cubo + 1;
+      int cubosLeidos = 0;
+
+      regConfig cabecera;
+      rewind(fHash);
+      fread(&cabecera, sizeof(regConfig), 1, fHash);
+
+      int totalDesborde = cabecera.nCubosDes;
+      int iniDesb = cabecera.nCubos;
+
+      for (i = 0; i < totalDesborde; i++)
+      {
+         fseek(fHash, sizeof(regConfig) + (iniDesb + i) * sizeof(tipoCubo), SEEK_SET);
+         fread(&cubo, sizeof(tipoCubo), 1, fHash);
+
+         for (int j = 0; j < cubo.numRegAsignados; j++)
+         {
+            if (cmpClave(&cubo.reg[j], reg) == 0)
+            {
+               *reg = cubo.reg[j];
+               posicion->cuboDes = iniDesb + i;
+               posicion->posReg = j;
+               return 0;
+            }
+         }
+      }
+   }
+
+   return -1;
+}
+
+int modificarReg(FILE *fHash, tipoReg *reg, tPosicion *posicion) {
+    if (!fHash)
+        return -2;
+
+    tipoCubo cubo;
+    tipoReg original = *reg; 
+
+    int resultado = busquedaHash(fHash, &original, posicion);
+    if (resultado == -1)
+        return -1; // no existe
+    if (resultado != 0)
+        return resultado; // -2 u -5
+
+    int cuboIndex = (posicion->cuboDes == -1) ? posicion->cubo : posicion->cuboDes;
+
+    fseek(fHash, sizeof(regConfig) + cuboIndex * sizeof(tipoCubo), SEEK_SET);
+    fread(&cubo, sizeof(tipoCubo), 1, fHash);
+
+    cubo.reg[posicion->posReg] = *reg;
+
+    fseek(fHash, -sizeof(tipoCubo), SEEK_CUR);
+    fwrite(&cubo, sizeof(tipoCubo), 1, fHash);
+
+    return 0;
+}
