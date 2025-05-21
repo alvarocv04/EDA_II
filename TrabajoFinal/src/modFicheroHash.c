@@ -4,30 +4,42 @@
 #include "../include/dispersion.h"
 
 int main()
-{ int nCubo,nCuboDes, posReg, error,bytesDesp;
-  tipoReg *reg;
-  char dni[9],provincia[11];
-  int salir=1,i;
- 
+{
 
-	#ifdef ALUM 
-		error = buscar("../datos/alumnosC.hash","8663873");
-		if (error)  printf("Error %d en la función bucar\n", error);
-		error = modificar("../datos/alumnosC.hash","8663873","Sevilla");
-		if (error)  printf("Error %d en la función modificar\n", error);	
-		error = buscar("../datos/alumnosC.hash","8663873");
+#ifdef ALUM
+	leeHash("../datos/alumnosC.hash");
+	char dni[9];
+    printf("Introduce DNI del alumno a buscar: ");
+    scanf("%s", dni);
 
-		
-	#endif  	
-	#ifdef ASIG
-		error = buscar("../datos/asignaturasC.hash", 101116);
-		if (error)  printf("Error %d en la función bucar\n", error);
-		error= modificar("../datos/asignaturasC.hash", 101116,4.5, 1.5);
-		if (error)  printf("Error %d en la función modificar\n", error);
-		error = buscar("../datos/asignaturasC.hash", 101116);
-	#endif
+    int res = buscar("../datos/alumnosC.hash", dni);
 
-	if (error)  printf("Error %d en la función buscar\n", error);
+    if (res == 0)
+        printf("Registro encontrado.\n");
+    else if (res == -1)
+        printf("Registro no encontrado.\n");
+    else
+        printf("Error (%d) durante la búsqueda.\n", res);
+
+    return 0;
+
+#endif
+#ifdef ASIG
+	leeHash("../datos/asignaturasC.hash");
+	int codigo;
+    printf("Introduce el codigo de la asignatura a buscar: ");
+    scanf("%d", &codigo);
+
+    int res = buscar("../datos/asignaturasC.hash", codigo);
+
+    if (res == 0)
+        printf("Registro encontrado.\n");
+    else if (res == -1)
+        printf("Registro no encontrado.\n");
+    else
+        printf("Error (%d) durante la búsqueda.\n", res);
+
+    return 0;
+#endif
+
 }
-
-

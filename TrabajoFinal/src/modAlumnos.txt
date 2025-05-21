@@ -1,0 +1,161 @@
+Cubo  0 ( 1 reg. ASIGNADOS)DNI: 7453920, Nombre: LUIS CASTA�O MARTIN, Provincia: SALAMANCA
+
+
+
+
+
+
+
+Cubo  1 ( 2 reg. ASIGNADOS)DNI: 7462906, Nombre: ANA CORRALES ZAPATA, Provincia: SALAMANCA
+                        DNI: 71493016, Nombre: JOSE SANCHEZ PEREZ, Provincia: SALAMANCA
+
+
+
+
+
+
+Cubo  2 ( 6 reg. ASIGNADOS)DNI: 7425362, Nombre: CARLOS ALDEHUELO CANDO, Provincia: SALAMANCA
+                        DNI: 4839392, Nombre: PASCUAL PANIAGUA APARICIO, Provincia: CACERES
+                        DNI: 13929272, Nombre: JAVIER PEREZ ARROYO, Provincia: SALAMANCA
+                        DNI: 12939272, Nombre: JUAN PEREZ SANCHEZ, Provincia: SALAMANCA
+                        DNI: 7301387, Nombre: M.CARMEN MORENO HERNANDEZ, Provincia: SALAMANCA
+                        DNI: 11543192, Nombre: FRANCISCO ROLDAN ESCUDERO, Provincia: ZAMORA
+
+
+Cubo  3 ( 8 reg. ASIGNADOS)DNI: 7348383, Nombre: SANTIAGO GUTIERREZ ALONSO, Provincia: SALAMANCA
+                        DNI: 32947683, Nombre: CIPRIANO RINCON ALAGUERO, Provincia: LEON
+                        DNI: 7432653, Nombre: ADOLFO IGLESIAS MARTIN, Provincia: CACERES
+                        DNI: 12283833, Nombre: CARLOS LOPEZ CUADRADO, Provincia: BADAJOZ
+                        DNI: 7282323, Nombre: ATAULFO LORENZO CARPIO, Provincia: CACERES
+                        DNI: 6373728, Nombre: ANTONIO PERANCHO MU�OZ, Provincia: CACERES
+                        DNI: 4568418, Nombre: JOSE RODRIGUEZ LUCAS, Provincia: AVILA
+                        DNI: 33333333, Nombre: JOSE HERNANDEZ PEREZ, Provincia: SALAMANCA
+Cubo  4 ( 2 reg. ASIGNADOS)DNI: 4566784, Nombre: JOAQUIN DOMINGUEZ MORALES, Provincia: SALAMANCA
+                        DNI: 7251874, Nombre: MARIANO JIMENEZ MARTIN, Provincia: SALAMANCA
+
+
+
+
+
+
+Cubo  5 ( 3 reg. ASIGNADOS)DNI: 2315525, Nombre: RAMON CASTILLA TAPIA, Provincia: SALAMANCA
+                        DNI: 7897445, Nombre: BRAULIO HOYOS MANCEBO, Provincia: ZAMORA
+                        DNI: 7395860, Nombre: LUIS ALVAREZ MARTIN, Provincia: SALAMANCA
+
+
+
+
+
+Cubo  6 ( 2 reg. ASIGNADOS)DNI: 6859236, Nombre: GREGORIO PEDRAZ ESTEBAN, Provincia: SALAMANCA
+                        DNI: 3546546, Nombre: LUIS PORRAS ELVIRA, Provincia: SALAMANCA
+
+
+
+
+
+
+Cubo  7 ( 6 reg. ASIGNADOS)DNI: 8939392, Nombre: CARLOS DIEZ MONTERO, Provincia: SALAMANCA
+                        DNI: 6883822, Nombre: PEDRO ABARCA MARTIN, Provincia: ZAMORA
+                        DNI: 20937832, Nombre: MIGUEL CALVO CARRASCO, Provincia: SALAMANCA
+                        DNI: 16738222, Nombre: IGNACIO FUENTES OLIVERA, Provincia: SALAMANCA
+                        DNI: 8939302, Nombre: MANUEL GONZALEZ PLAZA, Provincia: SALAMANCA
+                        DNI: 12515152, Nombre: RIGOBERTO ACU�A GIL, Provincia: SALAMANCA
+
+
+Cubo  8 ( 8 reg. ASIGNADOS)DNI: 7839293, Nombre: MANUEL GASTON BURILLO, Provincia: SALAMANCA
+DESBORDADO              DNI: 7112783, Nombre: FRANCISCO MURIEL ALONSO, Provincia: SALAMANCA
+                        DNI: 7326263, Nombre: RICARDO ELICES GOMEZ, Provincia: SALAMANCA
+                        DNI: 9029648, Nombre: JOSE BENITO BERNAL, Provincia: SALAMANCA
+                        DNI: 5235323, Nombre: JOSE LOBATO GARCIA, Provincia: CACERES
+                        DNI: 22874843, Nombre: FRANCISCO LOPEZ BARCO, Provincia: CACERES
+                        DNI: 8663873, Nombre: JUAN REGATOS MORO, Provincia: AVILA
+                        DNI: 256418, Nombre: REMIGIO MARTIN SERRADILLA, Provincia: SALAMANCA
+Cubo  9 ( 5 reg. ASIGNADOS)DNI: 8382939, Nombre: OVIDIO NIETO SANCHEZ, Provincia: CACERES
+                        DNI: 7851489, Nombre: FEDERICO HERNANDEZ REYES, Provincia: SALAMANCA
+                        DNI: 2574114, Nombre: LEONARDO MIGUEL RUBIO, Provincia: SALAMANCA
+                        DNI: 7124874, Nombre: FRANCISCO RAMOS DIEZ, Provincia: SALAMANCA
+                        DNI: 123456789, Nombre:  APE1 APE2, Provincia: SALAMANCA
+
+
+
+Cubo 10 ( 5 reg. ASIGNADOS)DNI: 11932930, Nombre: JOSE HERNANDEZ BERMEJO, Provincia: SALAMANCA
+                        DNI: 8393920, Nombre: ANTONIO RAMOS GARCIA, Provincia: SALAMANCA
+                        DNI: 7828645, Nombre: GONZALO SAGRADO MARTIN, Provincia: CACERES
+                        DNI: 23435455, Nombre: RAMIRO ROSADO ROJO, Provincia: SALAMANCA
+                        DNI: 74567890, Nombre: PEDRO PEREZ GONZALEZ, Provincia: SALAMANCA
+
+
+
+Cubo 11 ( 3 reg. ASIGNADOS)DNI: 11279546, Nombre: ANTONIO PRIETO MARCOS, Provincia: SALAMANCA
+                        DNI: 71954201, Nombre: RAQUEL MADRID LOPEZ, Provincia: SALAMANCA
+                        DNI: 71259836, Nombre: FELIX CABO SANCHEZ, Provincia: SALAMANCA
+
+
+
+
+
+Cubo 12 ( 5 reg. ASIGNADOS)DNI: 7839282, Nombre: RUBEN SAEZ ALONSO, Provincia: CACERES
+                        DNI: 8000202, Nombre: ERNESTO FUENTES MORO, Provincia: SALAMANCA
+                        DNI: 7823172, Nombre: EMILIO HERNANDEZ GARCIA, Provincia: CACERES
+                        DNI: 15838332, Nombre: ARSENIO MONTERO MERCHAN, Provincia: SALAMANCA
+                        DNI: 7219752, Nombre: M.MAR GOMEZ MORAN, Provincia: SALAMANCA
+
+
+
+Cubo 13 ( 5 reg. ASIGNADOS)DNI: 11929273, Nombre: SANTIAGO BERNAL GONZALEZ, Provincia: SALAMANCA
+                        DNI: 9262873, Nombre: MIGUEL GONZALO HUEBRA, Provincia: SALAMANCA
+                        DNI: 7389298, Nombre: LAMBERTO RODRIGUEZ GARCIA, Provincia: AVILA
+                        DNI: 14244148, Nombre: MANUEL TRIGO FERNANDEZ, Provincia: AVILA
+                        DNI: 25254178, Nombre: JUAN ACOSTA FERNANDEZ, Provincia: AVILA
+
+
+
+Cubo 14 ( 5 reg. ASIGNADOS)DNI: 7838294, Nombre: ALONSO RODRIGUEZ ESTEVEZ, Provincia: ZAMORA
+                        DNI: 7829354, Nombre: OVIDIO CEREZO CUADRADO, Provincia: SALAMANCA
+                        DNI: 8433839, Nombre: SILVERIO MATEOS HERNANDEZ, Provincia: CACERES
+                        DNI: 74196599, Nombre: LUIS ALVAREZ BENITO, Provincia: SALAMANCA
+                        DNI: 12312389, Nombre: CAROLINA SERRANO PEREZ, Provincia: SALAMANCA
+
+
+
+Cubo 15 ( 4 reg. ASIGNADOS)DNI: 11592038, Nombre: MARIA BLANCO MENDEZ, Provincia: SALAMANCA
+                        DNI: 2894123, Nombre: ANGEL MARTIN RODRIGUEZ, Provincia: ZAMORA
+                        DNI: 7152638, Nombre: M.ISABEL IGLESIA GARCIA, Provincia: SALAMANCA
+                        DNI: 11000258, Nombre: JESUS BORGES ENRIQUEZ, Provincia: SALAMANCA
+
+
+
+
+Cubo 16 ( 0 reg. ASIGNADOS)
+
+
+
+
+
+
+
+Cubo 17 ( 0 reg. ASIGNADOS)
+
+
+
+
+
+
+
+Cubo 18 ( 0 reg. ASIGNADOS)
+
+
+
+
+
+
+
+ORGANIZACIÓN MÉTODO DISPERSIÓN:
+         15 CUBOS y 4 CUBOS DESBORDE con capacidad 8
+Cubo de Desborde Actual: 15
+         Contiene 70 registros de los cuales se han desbordado 4:
+Densidad ACTUAL de ocupación: 46 
+        (MÍNIMA permitida 40.000000  MÁXIMA permitida 80.000000)
+Introduce DNI del alumno a buscar: 14244148
+DNI: 14244148, Nombre: MANUEL TRIGO FERNANDEZ, Provincia: AVILA
+Registro encontrado.

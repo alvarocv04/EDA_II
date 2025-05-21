@@ -178,7 +178,10 @@ int creaHash(char *fichEntrada, char *fichHash, regConfig *regC)
       return -1;
    fSalida = fopen(fichHash, "r+b");
    if (!fSalida)
+   {
+      fclose(fEntrada);
       return -2;
+   }
 
    while (fread(&reg, sizeof(tipoReg), 1, fEntrada) == 1)
    {
@@ -190,17 +193,25 @@ int creaHash(char *fichEntrada, char *fichHash, regConfig *regC)
       }
    }
 
-   float densidad = regC->numReg / (regC->nCubos * C) * 100;
+   rewind(fSalida);
+   fwrite(regC, sizeof(regConfig), 1, fSalida);
+
+   if (regC->nCubos == 0 || C == 0)
+   {
+      fclose(fEntrada);
+      fclose(fSalida);
+      return -5; // evitar división por cero
+   }
+   float densidad = ((float)regC->numReg / (regC->nCubos * C)) * 100;
+
+   fclose(fEntrada);
+   fclose(fSalida);
+
    if (densidad > regC->densidadMax)
       return -3;
    if (densidad < regC->densidadMin)
       return -4;
 
-   rewind(fSalida);
-   fwrite(regC, sizeof(regConfig), 1, fSalida);
-
-   fclose(fEntrada);
-   fclose(fSalida);
    return 0;
 }
 
@@ -212,7 +223,11 @@ int busquedaHash(FILE *fHash, tipoReg *reg, tPosicion *posicion)
    tipoCubo cubo;
    int i, posHash;
 
-   posHash = funcionHash(reg, posicion->cubo);
+   regConfig regC;
+   rewind(fHash);
+   fread(&regC, sizeof(regConfig), 1, fHash);
+   
+   posHash = funcionHash(reg, regC.nCubos);
    posicion->cubo = posHash;
    posicion->cuboDes = -1;
    posicion->posReg = -1;
@@ -220,7 +235,7 @@ int busquedaHash(FILE *fHash, tipoReg *reg, tPosicion *posicion)
    fseek(fHash, sizeof(regConfig) + posHash * sizeof(tipoCubo), SEEK_SET);
    fread(&cubo, sizeof(tipoCubo), 1, fHash);
 
-   for (i = 0; i < cubo.numRegAsignados; i++)
+   for (i = 0; i < cubo.numRegAsignados && i < C; i++)
    {
       if (cmpClave(&cubo.reg[i], reg) == 0)
       {
@@ -263,28 +278,29 @@ int busquedaHash(FILE *fHash, tipoReg *reg, tPosicion *posicion)
    return -1;
 }
 
-int modificarReg(FILE *fHash, tipoReg *reg, tPosicion *posicion) {
-    if (!fHash)
-        return -2;
+int modificarReg(FILE *fHash, tipoReg *reg, tPosicion *posicion)
+{
+   if (!fHash)
+      return -2;
 
-    tipoCubo cubo;
-    tipoReg original = *reg; 
+   tipoCubo cubo;
+   tipoReg original = *reg;
 
-    int resultado = busquedaHash(fHash, &original, posicion);
-    if (resultado == -1)
-        return -1; // no existe
-    if (resultado != 0)
-        return resultado; // -2 u -5
+   int resultado = busquedaHash(fHash, &original, posicion);
+   if (resultado == -1)
+      return -1; // no existe
+   if (resultado != 0)
+      return resultado; // -2 u -5
 
-    int cuboIndex = (posicion->cuboDes == -1) ? posicion->cubo : posicion->cuboDes;
+   int cuboIndex = (posicion->cuboDes == -1) ? posicion->cubo : posicion->cuboDes;
 
-    fseek(fHash, sizeof(regConfig) + cuboIndex * sizeof(tipoCubo), SEEK_SET);
-    fread(&cubo, sizeof(tipoCubo), 1, fHash);
+   fseek(fHash, sizeof(regConfig) + cuboIndex * sizeof(tipoCubo), SEEK_SET);
+   fread(&cubo, sizeof(tipoCubo), 1, fHash);
 
-    cubo.reg[posicion->posReg] = *reg;
+   cubo.reg[posicion->posReg] = *reg;
 
-    fseek(fHash, -sizeof(tipoCubo), SEEK_CUR);
-    fwrite(&cubo, sizeof(tipoCubo), 1, fHash);
+   fseek(fHash, -sizeof(tipoCubo), SEEK_CUR);
+   fwrite(&cubo, sizeof(tipoCubo), 1, fHash);
 
-    return 0;
+   return 0;
 }

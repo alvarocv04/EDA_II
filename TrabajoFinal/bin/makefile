@@ -22,7 +22,7 @@ modAlumnoH: $(OBJ)modAlumnoH.o $(OBJ)dispersionAl.o $(OBJ)alumno.o
 	gcc $(OBJ)modAlumnoH.o $(OBJ)dispersionAl.o $(OBJ)alumno.o -o modAlumnoH	
 
 $(OBJ)modAlumnoH.o: $(SRC)modFicheroHash.c $(H)dispersion.h 
-	gcc $(ALUMNO) $(SRC)modFicheroHash.c -o $(OBJ)modAlumnoH.o
+	gcc $(ALUMNO) -c $(SRC)modFicheroHash.c -o $(OBJ)modAlumnoH.o
 
 # Parte 3. Ejercicio 4: Acceso asignaturasC.hash	
 modAsigH: $(OBJ)modAsignaturaH.o $(OBJ)dispersionAs.o $(OBJ)asignatura.o
@@ -30,8 +30,17 @@ modAsigH: $(OBJ)modAsignaturaH.o $(OBJ)dispersionAs.o $(OBJ)asignatura.o
 $(OBJ)modAsignaturaH.o: $(SRC)modFicheroHash.c $(H)dispersion.h
 	gcc $(ASIG) $(SRC)modFicheroHash.c -o $(OBJ)modAsignaturaH.o
 # Parte	3. Ejercicio 5: Insertar registros en alumnosC.Hash y asignaturasC.Hash
-### ......
-	
+### 
+insertaAlumnoH: $(OBJ)insertaAlumnoH.o $(OBJ)dispersionAl.o $(OBJ)alumno.o
+	gcc $(OBJ)insertaAlumnoH.o $(OBJ)dispersionAl.o $(OBJ)alumno.o -o insertaAlumnoH	
+$(OBJ)insertaAlumnoH.o: $(SRC)insertarReg.c $(H)dispersion.h 
+	gcc $(ALUMNO) -c $(SRC)insertarReg.c -o $(OBJ)insertaAlumnoH.o
+
+insertaAsigH: $(OBJ)insertaAsigH.o $(OBJ)dispersionAs.o $(OBJ)asignatura.o
+	gcc $(OBJ)insertaAsigH.o $(OBJ)dispersionAs.o $(OBJ)asignatura.o -o insertaAsigH
+$(OBJ)insertaAsigH.o: $(SRC)insertarReg.c $(H)dispersion.h
+	gcc $(ASIG) $(SRC)insertarReg.c -o $(OBJ)insertaAsigH.o
+
 # Funciones genéricas de dispersión
 $(OBJ)dispersionAl.o: $(H)dispersion.h $(H)alumno.h $(SRC)dispersion.c
 	gcc $(ALUMNO) $(SRC)dispersion.c -o $(OBJ)dispersionAl.o
