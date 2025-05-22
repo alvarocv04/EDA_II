@@ -10,12 +10,12 @@ int main()
 	#ifdef ALUM 
  		strcpy(fEntrada,"../datos/alumnos.dat");
  		strcpy(fSalida,"../datos/alumnosC.hash");
-	  	regC.nCubos=15;
+	  	regC.nCubos=10;
 	#endif  	  	
 	#ifdef ASIG
  		strcpy(fEntrada,"../datos/asignaturas.dat");
  		strcpy(fSalida,"../datos/asignaturasC.hash");
-	  	regC.nCubos=10;
+	  	regC.nCubos=8;
 	#endif  	
   	regC.nCubosDes=4;	// Número de cubos area de desborde
 	regC.densidadMax=80;

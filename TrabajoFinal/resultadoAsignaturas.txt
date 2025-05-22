@@ -1,0 +1,79 @@
+//ÁLVARO CASTRO VALVERDE PB3 70926103Z
+Cubo  0 ( 6 reg. ASIGNADOS)Código: 101104, Nombre: Computadores I, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101112, Nombre: Programación III , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 7
+                        Código: 101120, Nombre: Interfaces Gráficas de Usuario , Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 2, Grupos P: 4
+                        Código: 101128, Nombre: Aspectos Legales y Profesionales de la Informática, Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 101136, Nombre: Desarrollo de aplicaciones Avanzadas , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 101144, Nombre: Informática Industrial , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo  1 ( 6 reg. ASIGNADOS)Código: 101105, Nombre: Cálculo , Curso: 1, Créditos T: 4.00, Créditos P: 2.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101113, Nombre: Señales y Sistemas , Curso: 2, Créditos T: 4.50, Créditos P: 1.50, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 6
+                        Código: 101121, Nombre: Programación Avanzada , Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 2, Grupos P: 4
+                        Código: 101137, Nombre: Animación Digital , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 2
+                        Código: 101129, Nombre: Fundamentos de Sistemas Inteligentes , Curso: 4, Créditos T: 4.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: P, Grupos T: 2, Grupos P: 4
+                        Código: 302425, Nombre: Creación de Empresas de Base Tecnológica, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+Cubo  2 ( 6 reg. ASIGNADOS)Código: 101106, Nombre: Álgebra Computacional , Curso: 1, Créditos T: 4.00, Créditos P: 2.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101114, Nombre: Sistemas Operativos I , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 6
+                        Código: 101122, Nombre: Ingeniería de Software II , Curso: 3, Créditos T: 4.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: P, Grupos T: 2, Grupos P: 6
+                        Código: 101130, Nombre: Gestión de Proyectos , Curso: 4, Créditos T: 4.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: P, Grupos T: 2, Grupos P: 4
+                        Código: 302426, Nombre: Diseño, Adm.e Integración de Infraestructuras en T.Inf, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302434, Nombre: Paradigmas Avanzados Interacción Persona/Ordenador, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo  3 ( 6 reg. ASIGNADOS)Código: 101107, Nombre: Programación II , Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101115, Nombre: Sistemas de Bases de Datos , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101123, Nombre: Redes de Computadores I, Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 2, Grupos P: 6
+                        Código: 101131, Nombre: Seguridad en Sistemas Informáticos , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 3
+                        Código: 101139, Nombre: Tecnologías de Información Emergentes , Curso: 4, Créditos T: 1.50, Créditos P: 4.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 101147, Nombre: Trabajo Fin de Grado , Curso: 4, Créditos T: 6.00, Créditos P: 6.00, Tipo: G, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo  4 ( 6 reg. ASIGNADOS)Código: 101100, Nombre: Álgebra Lineal y Geometría, Curso: 1, Créditos T: 4.00, Créditos P: 2.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101108, Nombre: Organización y Gestión de Empresas , Curso: 1, Créditos T: 4.00, Créditos P: 2.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 8
+                        Código: 101116, Nombre: Estructura de Datos y Algoritmos II , Curso: 2, Créditos T: 4.50, Créditos P: 1.50, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101148, Nombre: Modelado y Simulación , Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 101124, Nombre: Interacción Persona-Ordenador , Curso: 3, Créditos T: 1.50, Créditos P: 4.50, Tipo: O, Cuatrimestre: S, Grupos T: 2, Grupos P: 4
+                        Código: 101132, Nombre: Sistemas Distribuidos , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 2, Grupos P: 4
+Cubo  5 ( 6 reg. ASIGNADOS)Código: 101101, Nombre: Estadística , Curso: 1, Créditos T: 4.00, Créditos P: 2.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101109, Nombre: Computadores II , Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 8
+                        Código: 101117, Nombre: Informática Teórica , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101125, Nombre: Arquitectura de Computadores , Curso: 3, Créditos T: 4.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101133, Nombre: Teoría de la Información y Teoría de Códigos, Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 101149, Nombre: Prácticas Externas , Curso: 4, Créditos T: 6.00, Créditos P: 6.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo  6 ( 6 reg. ASIGNADOS)Código: 101102, Nombre: Programación I , Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101110, Nombre: Diseño de Bases de Datos , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 6
+                        Código: 101118, Nombre: Ingeniería de Software I , Curso: 2, Créditos T: 4.50, Créditos P: 1.50, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101126, Nombre: Administración de Sistemas , Curso: 3, Créditos T: 1.50, Créditos P: 4.50, Tipo: O, Cuatrimestre: S, Grupos T: 2, Grupos P: 4
+                        Código: 101134, Nombre: Periféricos , Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 2
+                        Código: 101142, Nombre: Robótica , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 2
+Cubo  7 ( 6 reg. ASIGNADOS)Código: 101103, Nombre: Fundamentos Físicos , Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 8
+DESBORDADO              Código: 101111, Nombre: Estructura de Datos y Algoritmos I , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: P, Grupos T: 2, Grupos P: 6
+                        Código: 101119, Nombre: Sistemas Operativos II , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: B, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101143, Nombre: Control de Procesos , Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 2
+                        Código: 101127, Nombre: Redes de Computadores II , Curso: 3, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 2, Grupos P: 6
+                        Código: 101135, Nombre: Sistemas Digitales Programables , Curso: 4, Créditos T: 3.00, Créditos P: 3.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo  8 ( 6 reg. ASIGNADOS)Código: 302428, Nombre: Calidad y Auditoría , Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302430, Nombre: Computación de Altas Prestaciones , Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302429, Nombre: Computación Gráfica , Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302427, Nombre: Sistemas de Información Orientados a Servicios, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302437, Nombre: Computación Científica, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302439, Nombre: Desarrollo de Aplicaciones Móviles, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo  9 ( 6 reg. ASIGNADOS)Código: 302440, Nombre: Eficiencia de Sistemas Informáticos, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302431, Nombre: Gobierno en Tecnologías de la Información, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302436, Nombre: Inteligencia de Negocio, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302432, Nombre: Modelado Avanzado en Sistemas de Información, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302438, Nombre: Posicionamiento, Búsqueda y Recuperación de Inf., Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302441, Nombre: Robots Autónomos, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+Cubo 10 ( 6 reg. ASIGNADOS)Código: 302433, Nombre: Sistemas Inteligentes, Curso: 1, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302435, Nombre: Sistemas Ubicuos, Empotrados y Móviles, Curso: 1, Créditos T: 1.50, Créditos P: 1.50, Tipo: O, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 302448, Nombre: Trabajo de Fin de Máster, Curso: 2, Créditos T: 9.00, Créditos P: 9.00, Tipo: O, Cuatrimestre: A, Grupos T: 1, Grupos P: 1
+                        Código: 302443, Nombre: Criptografía , Curso: 2, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302444, Nombre: Informática Biomédica , Curso: 2, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+                        Código: 302442, Nombre: Ingeniería de Lenguajes de Programación , Curso: 2, Créditos T: 1.50, Créditos P: 1.50, Tipo: P, Cuatrimestre: P, Grupos T: 1, Grupos P: 1
+Cubo 11 ( 2 reg. ASIGNADOS)Código: 302447, Nombre: Prácticas Externas , Curso: 2, Créditos T: 3.00, Créditos P: 3.00, Tipo: O, Cuatrimestre: S, Grupos T: 1, Grupos P: 1
+                        Código: 123456, Nombre: PRUEBA, Curso: 2, Créditos T: 2.00, Créditos P: 4.00, Tipo: P, Cuatrimestre: S, Grupos T: 1, Grupos P: 2
+
+
+
+
+ORGANIZACIÓN MÉTODO DISPERSIÓN:
+         8 CUBOS y 4 CUBOS DESBORDE con capacidad 6
+Cubo de Desborde Actual: 11
+         Contiene 68 registros de los cuales se han desbordado 20:
+Densidad ACTUAL de ocupación: 74 
+        (MÍNIMA permitida 40.000000  MÁXIMA permitida 80.000000)

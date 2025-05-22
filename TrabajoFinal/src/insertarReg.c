@@ -20,8 +20,9 @@ int main()
 
     tAlumno nuevo;
     printf("Introduce nuevo alumno:\n");
+    fflush(stdin);
     printf("Nombre: ");
-    scanf(" %[^\n]", nuevo.nombre);
+    scanf("%s", nuevo.nombre);
     printf("DNI: ");
     scanf("%s", nuevo.dni);
     printf("Apellido 1: ");
