@@ -1,3 +1,4 @@
+//ÁLVARO CASTRO VALVERDE PB3 70926103Z
 #ifndef __ASIGNATURA_H
 #define __ASIGNATURA_H
 #define C 6	        // Capacidad del cubo fichero asignaturas

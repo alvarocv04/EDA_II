@@ -1,3 +1,4 @@
+//ÁLVARO CASTRO VALVERDE PB3 70926103Z
 #include "../include/asignatura.h"
 #include "../include/dispersion.h"
 #include <stdio.h>

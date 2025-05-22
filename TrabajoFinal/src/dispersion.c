@@ -1,10 +1,9 @@
+//ÁLVARO CASTRO VALVERDE PB3 70926103Z
 #include "../include/dispersion.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// Lee el contenido del fichero hash organizado mediante el método de DISPERSIÓN según los criterios
-// especificados en la práctica. Se leen todos los cubos completos tengan registros asignados o no. La
-// salida que produce esta función permite visualizar el método de DISPERSIÓN
+
 int leeHash(char *fichHash)
 {
    FILE *f;

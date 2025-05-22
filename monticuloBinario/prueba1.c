@@ -9,7 +9,7 @@ int main(void)
 
  iniciaMonticulo(&m);
  elemento.clave=12;
- elemento.informacion=0;
+ elemento.informacion=3;
 
  i=insertar(elemento,&m);
 

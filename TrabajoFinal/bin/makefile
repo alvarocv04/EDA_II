@@ -1,3 +1,4 @@
+# //ÁLVARO CASTRO VALVERDE PB3 70926103Z
 # Generación de fichero por el método de dispersión
 SRC=../src/
 H=../include/
